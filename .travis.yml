@@ -2,6 +2,6 @@ sudo: required # because we are using docker
 services:
   - docker
 before_install:
-  - docker build -t abidex4yemi4yemi/react-docker -f Dockerfile.dev .
+  - docker build -t abidex4yemi/react-docker -f Dockerfile.dev .
 script:
-  - docker run abidex4yemi4yemi/react-docker npm test -- --coverage
+  - docker run abidex4yemi/react-docker npm test -- --coverage
